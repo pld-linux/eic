@@ -6,8 +6,6 @@ Version:	4.3.0
 Release:	1
 License:	Artistic License (generally free)
 Group:		Development/Languages
-Group(de):	Entwicklung/Sprachen
-Group(pl):	Programowanie/JЙzyki
 Source0:	http://www.kd-dev.com/~eic/download/eicdist/%{dir}/EiCsrc_%{version}.tgz
 Source1:	%{name}.h
 Patch0:		%{name}-make.patch
@@ -36,13 +34,6 @@ skryptowego syntaktycznie zgodnego z C do swoich programСw.
 Summary:	Static eic library for embedding
 Summary(pl):	Biblioteka statyczna eic
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 
 %description lib
 Static library that allows to embed EiC in your own programs, allowing

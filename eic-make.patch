@@ -1,0 +1,11 @@
+diff -urN EiC.org/config/_LINUX/make.params EiC/config/_LINUX/make.params
+--- EiC.org/config/_LINUX/make.params	Sun Sep 10 20:50:12 2000
++++ EiC/config/_LINUX/make.params	Sun Sep 10 20:52:03 2000
+@@ -1,6 +1,6 @@
+ 	 PLATFORM = _LINUX
+                CC = gcc
+-       STD_CFLAGS = -ansi -pedantic -O2 -fsigned-char -Wall 
++       STD_CFLAGS = $(OPT) -fsigned-char -Wall 
+     INCLUDE_FLAGS = -I-
+ 
+                AR = ar

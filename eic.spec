@@ -6,10 +6,11 @@ Version:	4.3.0
 Release:	1
 License:	Artistic License (generally free)
 Group:		Development/Languages
+Group(de):	Entwicklung/Sprachen
 Group(pl):	Programowanie/Jêzyki
 Source0:	http://www.kd-dev.com/~eic/download/eicdist/%{dir}/EiCsrc_%{version}.tgz
-Source1:	eic.h
-Patch0:		eic-make.patch
+Source1:	%{name}.h
+Patch0:		%{name}-make.patch
 URL:		http://www.kd-dev.com/~eic
 BuildRequires:	tetex-latex
 BuildRequires:	tetex-dvips
@@ -18,36 +19,36 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 EiC is a freely available C language interpreter in both source and
 binary form. EiC allows you to write C programs, and then "execute"
-them as if they were a script (like a Perl script or a shell script). You
-can even embed EiC in your own programs, allowing your
-application to have a "scripting" language that is syntactically
-equivalent to C. It is also possible to let an EiC "script" call compiled
-library code and for compiled code to make callbacks to EiC user
-defined functions. 
+them as if they were a script (like a Perl script or a shell script).
+You can even embed EiC in your own programs, allowing your application
+to have a "scripting" language that is syntactically equivalent to C.
+It is also possible to let an EiC "script" call compiled library code
+and for compiled code to make callbacks to EiC user defined functions.
 
 %description -l pl
-EiC jest darmowym, ogólnodostêpnym interpreterem jêzyka C zarówno
-w formie ¼ród³owej jak i binarnej. EiC pozwala na pisanie programów
-w C, a nastêpnie ich "wykonywanie" tak jakby by³y skryptami (takimi
-samymi jak skrypty Perla czy pow³oki). Mo¿esz nawet w³±czyæ obs³ugê
-jêzyka skryptowego syntaktycznie zgodnego z C do swoich programów.
+EiC jest darmowym, ogólnodostêpnym interpreterem jêzyka C zarówno w
+formie ¼ród³owej jak i binarnej. EiC pozwala na pisanie programów w C,
+a nastêpnie ich "wykonywanie" tak jakby by³y skryptami (takimi samymi
+jak skrypty Perla czy pow³oki). Mo¿esz nawet w³±czyæ obs³ugê jêzyka
+skryptowego syntaktycznie zgodnego z C do swoich programów.
 
 %package lib
-Summary:        Static eic library for embedding
-Summary(pl):    Biblioteka statyczna eic
-Group:          Development/Libraries
-Group(fr):      Development/Librairies
-Group(pl):      Programowanie/Biblioteki
+Summary:	Static eic library for embedding
+Summary(pl):	Biblioteka statyczna eic
+Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(fr):	Development/Librairies
+Group(pl):	Programowanie/Biblioteki
 
 %description lib
-Static library that allows to embed EiC in your own programs,
-allowing your application to have a "scripting" language that
-is syntactically equivalent to C.
+Static library that allows to embed EiC in your own programs, allowing
+your application to have a "scripting" language that is syntactically
+equivalent to C.
 
 %description -l pl lib
-Statyczne biblioteki pozwalaj±ce w³±czyæ EiC do swoich
-w³asnych programów dodaj±c tym samym obs³ugê "jêzyka
-skryptowego" syntaktycznie zgodnego z C.
+Statyczne biblioteki pozwalaj±ce w³±czyæ EiC do swoich w³asnych
+programów dodaj±c tym samym obs³ugê "jêzyka skryptowego" syntaktycznie
+zgodnego z C.
 
 %prep
 %setup -q -n EiC
@@ -56,7 +57,7 @@ touch module/link.libs
 
 %build
 ./config/makeconfig
-OPT="$RPM_OPT_FLAGS" %{__make}
+OPT="%{rpmcflags}" %{__make}
 cd doc && %{__make}
 
 %install

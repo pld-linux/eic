@@ -10,7 +10,7 @@ Source0:	http://www.kd-dev.com/~eic/download/eicdist/%{dir}/EiCsrc_%{version}.tg
 # Source0-md5:	4d026568a86f7672bc1417e391c14488
 Source1:	%{name}.h
 Patch0:		%{name}-make.patch
-URL:		http://www.kd-dev.com/~eic
+URL:		http://www.kd-dev.com/~eic/
 BuildRequires:	tetex-latex
 BuildRequires:	tetex-dvips
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

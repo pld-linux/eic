@@ -7,6 +7,7 @@ Release:	1
 License:	Artistic (generally free)
 Group:		Development/Languages
 Source0:	http://www.kd-dev.com/~eic/download/eicdist/%{dir}/EiCsrc_%{version}.tgz
+# Source0-md5:	4d026568a86f7672bc1417e391c14488
 Source1:	%{name}.h
 Patch0:		%{name}-make.patch
 URL:		http://www.kd-dev.com/~eic

@@ -40,7 +40,7 @@ Static library that allows to embed EiC in your own programs, allowing
 your application to have a "scripting" language that is syntactically
 equivalent to C.
 
-%description -l pl lib
+%description lib -l pl
 Statyczne biblioteki pozwalaj±ce w³±czyæ EiC do swoich w³asnych
 programów dodaj±c tym samym obs³ugê "jêzyka skryptowego" syntaktycznie
 zgodnego z C.
@@ -62,7 +62,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir},%{_includedir}}
 
 %{__make} install \
 	INSTALL_DIR="$RPM_BUILD_ROOT%{_bindir}"
-	
+
 install lib/*.a		$RPM_BUILD_ROOT%{_libdir}
 install	%{SOURCE1}	$RPM_BUILD_ROOT%{_includedir}
 

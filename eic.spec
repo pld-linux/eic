@@ -4,7 +4,7 @@ Name:		eic
 Version:	4.3.0
 %define	dir	4_3_0
 Release:	1
-License:	Artistic License (generally free)
+License:	Artistic (generally free)
 Group:		Development/Languages
 Source0:	http://www.kd-dev.com/~eic/download/eicdist/%{dir}/EiCsrc_%{version}.tgz
 Source1:	%{name}.h

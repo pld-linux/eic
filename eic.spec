@@ -37,8 +37,12 @@ Summary:	Static eic library for embedding
 Summary(pl):	Biblioteka statyczna eic
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	Разработка/Библиотеки
+Group(uk):	Розробка/Б╕бл╕отеки
 
 %description lib
 Static library that allows to embed EiC in your own programs, allowing

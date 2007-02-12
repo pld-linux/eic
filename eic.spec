@@ -1,5 +1,5 @@
 Summary:	C language interpreter
-Summary(pl.UTF-8):   Interpreter języka C
+Summary(pl.UTF-8):	Interpreter języka C
 Name:		eic
 Version:	4.3.0
 %define	dir	4_3_0
@@ -33,7 +33,7 @@ skryptowego syntaktycznie zgodnego z C do swoich programów.
 
 %package lib
 Summary:	Static eic library for embedding
-Summary(pl.UTF-8):   Biblioteka statyczna eic
+Summary(pl.UTF-8):	Biblioteka statyczna eic
 Group:		Development/Libraries
 
 %description lib

@@ -1,5 +1,5 @@
 Summary:	C language interpreter
-Summary(pl):	Interpreter jêzyka C
+Summary(pl.UTF-8):   Interpreter jÄ™zyka C
 Name:		eic
 Version:	4.3.0
 %define	dir	4_3_0
@@ -24,16 +24,16 @@ to have a "scripting" language that is syntactically equivalent to C.
 It is also possible to let an EiC "script" call compiled library code
 and for compiled code to make callbacks to EiC user defined functions.
 
-%description -l pl
-EiC jest darmowym, ogólnodostêpnym interpreterem jêzyka C zarówno w
-formie ¼ród³owej jak i binarnej. EiC pozwala na pisanie programów w C,
-a nastêpnie ich "wykonywanie" tak jakby by³y skryptami (takimi samymi
-jak skrypty Perla czy pow³oki). Mo¿esz nawet w³±czyæ obs³ugê jêzyka
-skryptowego syntaktycznie zgodnego z C do swoich programów.
+%description -l pl.UTF-8
+EiC jest darmowym, ogÃ³lnodostÄ™pnym interpreterem jÄ™zyka C zarÃ³wno w
+formie ÅºrÃ³dÅ‚owej jak i binarnej. EiC pozwala na pisanie programÃ³w w C,
+a nastÄ™pnie ich "wykonywanie" tak jakby byÅ‚y skryptami (takimi samymi
+jak skrypty Perla czy powÅ‚oki). MoÅ¼esz nawet wÅ‚Ä…czyÄ‡ obsÅ‚ugÄ™ jÄ™zyka
+skryptowego syntaktycznie zgodnego z C do swoich programÃ³w.
 
 %package lib
 Summary:	Static eic library for embedding
-Summary(pl):	Biblioteka statyczna eic
+Summary(pl.UTF-8):   Biblioteka statyczna eic
 Group:		Development/Libraries
 
 %description lib
@@ -41,9 +41,9 @@ Static library that allows to embed EiC in your own programs, allowing
 your application to have a "scripting" language that is syntactically
 equivalent to C.
 
-%description lib -l pl
-Statyczne biblioteki pozwalaj±ce w³±czyæ EiC do swoich w³asnych
-programów dodaj±c tym samym obs³ugê "jêzyka skryptowego" syntaktycznie
+%description lib -l pl.UTF-8
+Statyczne biblioteki pozwalajÄ…ce wÅ‚Ä…czyÄ‡ EiC do swoich wÅ‚asnych
+programÃ³w dodajÄ…c tym samym obsÅ‚ugÄ™ "jÄ™zyka skryptowego" syntaktycznie
 zgodnego z C.
 
 %prep

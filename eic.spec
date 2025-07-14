@@ -48,7 +48,7 @@ zgodnego z C.
 
 %prep
 %setup -q -n EiC
-%patch0 -p1
+%patch -P0 -p1
 touch module/link.libs
 
 %build
